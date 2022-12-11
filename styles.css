@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+path {
+  fill: none;
+  stroke: #212121;
+  stroke-width: 2.7;
+}
+
+.color-orange {
+  stroke-width: 3;
+  stroke: #4ef4cd;
+}
+.color-yellow {
+  stroke: #4ab7b4;
+  stroke-width: 3;
+}
+.color-pink {
+  stroke: #97dece;
+  stroke-width: 3;
+}
+.shade-dark {
+  stroke-width: 20;
+  stroke: #3ed6d8;
+}
+.shade-med {
+  stroke-width: 20;
+  stroke: #97dece;
+}
+.shade-lite {
+  stroke-width: 20;
+  stroke: #97dece;
+}
+.container {
+  margin-top: 200px;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+svg{
+  animation: spin 5s linear infinite;
+  animation-delay: 17s;
+  transition: ease;
+}
+
+body {
+  animation: background-fade 5s forwards;
+  animation-delay: 18s;
+  width: 100%;
+}
+.glow {
+  height: 400px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  display: block;
+  animation: scaling 2s ease-in forwards;
+  animation-delay: 18s;
+}
+.glow .blok {
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  display: block;
+  align-items: center;
+  margin: 100px auto;
+  border-radius: 50%;
+  animation: glow 1s ease-in-out infinite alternate;
+  animation-delay: 19s;
+}
+
+.text {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 120px #fff, 0 0 140px #fff, 0 0 150px #439a97,
+      0 0 170px #fff, 0 0 170px #2affcd, 0 0 180px #2affcd, 0 0 190px #2affcd;
+  }
+  to {
+    box-shadow: 0 0 140px #fff, 0 0 150px #94ffe6, 0 0 160px #94ffe6,
+      0 0 170px #94ffe6, 0 0 180px #94ffe6, 0 0 190px #94ffe6, 0 0 200px #94ffe6;
+  }
+}
+@keyframes scaling {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes background-fade {
+  0% {
+  }
+  100% {
+    background: #181d31;
+  }
+}

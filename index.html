@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./styles-form.css">
+    <script>
+        function user(){
+            var name = document.getElementById("nama").value;
+            localStorage.setItem("textvalue",name);
+            return false;
+        }
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower by Vlxm</title>
+</head>
+<body>
+    <form class="form" action="flower.html">
+        <img src="./cat.gif" alt="cat" class="cat">
+    <h4>Haiiiii, Isi ini dulu ya...</h4>
+    <input class="input" type="text" placeholder="Nama Kamu" id="nama" >
+    <input type="submit" onclick="user();" value="Masukan" class="button">
+    </form>
+</body>
+</html>
